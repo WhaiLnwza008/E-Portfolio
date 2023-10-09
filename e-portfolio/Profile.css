@@ -1,0 +1,1967 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+i {
+    color: white;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    background-color: rgb(29, 27, 44);
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+}
+
+.nav-logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.nav-logo h1{
+    color: rgb(27, 160, 49);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 30px;
+    
+  }
+
+ul {
+    flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  display: none;
+}
+
+ul li{
+    font-size: 15px;
+    margin: 20px;
+    text-align: center;
+    padding: 5px 50px;
+    font-weight: bold;
+}
+
+.menu-i {
+    color: rgb(255, 255, 255);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    transition: 0.5s;
+    
+}
+
+.menu-i:hover {
+
+    transition: 0.5s;
+    color: rgb(27, 160, 49);
+    border-bottom: 1px solid rgb(46, 212, 73);
+}
+
+.active {
+    display: flex;
+  }
+
+  @media screen and (min-width: 800px) {
+    .nav-bar {
+      height: 80px;
+      flex-direction: row;
+    }
+  
+    .nav-logo {
+      padding-left: 40px;
+      padding-right: 50px;
+      margin: 0;
+      width: 50%;
+    }
+  
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      flex-direction: row;
+    }
+  
+    ul li {
+      display: inline-block;
+      margin: 0 31px 0 0;
+      text-align: center;
+      padding: 0;
+    }
+  
+    .nav-toggle {
+      display: none;
+    }
+  }
+
+.background-menu {
+    width: 100%;
+    height: auto;
+    
+
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 27, 44);
+    padding-bottom: 10rem;
+}
+
+.content-profile{
+    width: 100%;
+    text-align: center;
+}
+
+.content-profile img{
+    margin-top: 60px;
+    width: 330px;
+    border-radius: 60px ;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    animation: float 6s ease-out infinite;
+  
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.boxofbox-c {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.box-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 70%;
+    background-color: white;
+    width: 65%;
+}
+
+.box-c-text {
+    padding-top: 15px;
+    letter-spacing: 1px;
+    text-indent: 50px;
+    margin-left: 10px;
+    font-weight: 300;
+    font-family: 'Kanit', sans-serif;
+}
+
+.box-c-Btext {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width : 1200px) {
+  .box-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 70%;
+    background-color: white;
+    width: 65%;
+}
+}
+@media screen and (max-width : 800px) {
+  .box-content {
+    width: 80%;
+    margin-left: 90px;
+
+  }
+  .box-c-text {
+    font-size: 30px;
+  } 
+
+.box-c-Btext {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+  }
+}
+@media screen and (max-width : 550px) {
+  .box-content {
+    width: 90%;
+    margin-left: 25px;
+
+  }
+  .box-c-text {
+    font-size: 25px;
+  } 
+
+.box-c-Btext {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 60px;
+    font-size: 25px;
+    padding-bottom: 30px;
+    letter-spacing: 5px;
+  }
+}
+
+
+.content-skill-contract {
+  width: 100%;
+  height: fit-content;
+  
+  
+}
+
+.nav-skill {
+  
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 80px;
+  background-color: rgb(59, 59, 59);
+}
+
+.text-b-skill {
+  font-family: 'Kanit', sans-serif;
+  padding-top: 20px;
+  margin-left: 60px;
+  color: white;
+  font-size: 40px;
+  
+}
+
+.b-skill {
+  width: 100%;
+  
+ 
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+}
+
+.s-skill {
+  
+  padding-top: 100px;
+  padding-left: 320px;
+  font-size: 30px;
+  display: block;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+}
+
+.i-s-skill i{
+  font-size: 70px;
+  color: rgb(27, 160, 49);
+}
+
+.content-contract {
+  width: 100%;
+  padding-bottom: 50px;
+  height: fit-content;
+  
+}
+
+.contract-nav {
+  margin-left: -15rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  
+ 
+  
+ 
+}
+
+.s-box-contract {
+  margin-left: 250px;
+  margin-top: 80px;
+  border: 3px solid rgba(66, 66, 66, 0.767);
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.s-box-contract2 {
+  margin-left: 250px;
+  margin-top: 80px;
+  border: 3px solid rgba(66, 66, 66, 0.767);
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.s-box-contract3 {
+  margin-left: 250px;
+  margin-top: 80px;
+  border: 3px solid rgba(66, 66, 66, 0.767);
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.s-box-contract:hover {
+  margin-left: 250px;
+  margin-top: 80px;
+  border: 3px solid #d921e9;
+  box-shadow: 0px 0px 20px 1px #d921e9;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.s-box-contract2:hover{
+  margin-left: 250px;
+  margin-top: 80px;
+  border: 3px solid #167ee9;
+  box-shadow: 0px 0px 20px 1px #167ee9;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.s-box-contract3:hover {
+  margin-left: 250px;
+  margin-top: 80px;
+  border: 3px solid #e9dc21;
+  box-shadow: 0px 0px 20px 1px #e9dc21;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.box-contract {
+  text-align: center;
+  border-radius: 20px;
+  
+  width: 300px;
+  height: 300px;
+  
+  background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+}
+
+.box-contract i{
+    padding-top: 90px;
+    font-size: 100px;
+}
+
+.box-contract2 {
+  text-align: center;
+  border-radius: 20px;
+  
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+}
+
+.box-contract3 {
+  text-align: center;
+  border-radius: 20px;
+  
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+}
+
+.box-contract2 i{
+  padding-top: 90px;
+  font-size: 100px;
+}
+
+@media screen and (max-width : 600px) {
+  .contract-nav {
+  
+    margin-left: -15rem;
+  }
+  .b-skill {
+  
+    margin-left: -10rem;
+    
+  }
+}
+@media screen and (max-width : 369px) {
+  .contract-nav {
+    
+    margin-left: -15rem;
+  }
+  .b-skill {
+  
+    margin-left: -10rem;
+    
+  }
+}
+
+.box-contract3 i{
+  color: rgb(241, 224, 70);
+  padding-top: 90px;
+  font-size: 100px;
+}
+
+
+.box-contract-text {
+  width: 100%;
+  text-align: center;
+}
+
+.text-box1 {  
+  
+  font-family: 'Kanit', sans-serif;
+  color: black;
+  font-size: 20px;
+  transition: 0.5s; 
+}
+
+.text-box1:hover { 
+  transition: 0.5s; 
+  
+  font-family: 'Kanit', sans-serif;
+  color: rgb(19, 167, 0);
+  font-size: 20px
+}
+
+.text-box2 {  
+  
+  font-family: 'Kanit', sans-serif;
+  color: black;
+  font-size: 20px;
+  transition: 0.5s; 
+}
+
+.text-box2:hover { 
+  transition: 0.5s; 
+  
+  font-family: 'Kanit', sans-serif;
+  color: rgb(19, 167, 0);
+  font-size: 20px
+}
+
+.text-box3 {  
+  
+  font-weight: 500;
+  font-family: 'Kanit', sans-serif;
+  color: black;
+  font-size: 20px;
+  transition: 0.5s; 
+}
+
+.text-box3:hover { 
+  transition: 0.5s; 
+  cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+  color: rgb(19, 167, 0);
+  font-size: 20px
+}
+
+/* ------------------------------------------------ Mobile -----------------------------------------------------------
+@media screen and (max-width : 1732px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 300px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 170px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 90px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 250px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 250px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .s-box-contract {
+    margin-left: 0px;
+  }
+  
+  .text-box1 {  
+    padding-left: 320px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+  
+  .text-box2 {  
+    padding-left: 300px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+  .text-box3 {  
+    padding-left: 268px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+ 
+  
+}
+
+@media screen and (max-width : 1584px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 270px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 120px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 90px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 200px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 200px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .s-box-contract {
+    margin-left: 0px;
+  }
+  
+  .text-box1 {  
+    padding-left: 200px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+  
+  .text-box2 {  
+    padding-left: 250px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+ 
+  
+  .text-box3 {  
+    padding-left: 218px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 80%;
+}
+  
+}
+
+@media screen and (max-width : 1418px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 230px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 120px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 90px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 150px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .s-box-contract {
+    margin-left: 0px;
+  }
+  
+  .text-box1 {  
+    padding-left: 180px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+  
+  .text-box2 {  
+    padding-left: 210px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+
+  
+  .text-box3 {  
+    padding-left: 168px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 80%;
+}
+  
+}
+
+@media screen and (max-width : 1331px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 200px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 90px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 110px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 110px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .s-box-contract {
+    margin-left: 0px;
+  }
+  
+  .text-box1 {  
+    padding-left: 150px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+  
+  .text-box2 {  
+    padding-left: 170px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+  
+  .text-box3 {  
+    padding-left: 128px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+  
+}
+
+@media screen and (max-width : 1245px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 170px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 80px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 90px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 70px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 70px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .s-box-contract {
+    margin-left: 0px;
+  }
+  
+  .text-box1 {  
+    padding-left: 120px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+  
+  .text-box2 {  
+    padding-left: 130px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  
+  
+  .text-box3 {  
+    padding-left: 78px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+ 
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+  
+}
+
+@media screen and (max-width : 1132px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 160px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 90px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 70px;
+    margin-left: 70px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 60px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .s-box-contract {
+    margin-left: 0px;
+  }
+  
+  .text-box1 {  
+    padding-left: 100px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+ 
+  
+  .text-box2 {  
+    padding-left: 120px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+
+  
+  .text-box3 {  
+    padding-left: 68px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+ 
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 25px;
+  font-family: 'Kanit', sans-serif;
+}
+  
+}
+
+@media screen and (max-width : 1083px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 130px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 90px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 70px;
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 60px;
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 90px;
+    font-size: 100px;
+  }
+  
+  
+  .text-box1 {  
+    padding-left: 80px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  .text-box2 {  
+    padding-left: 90px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  .text-box3 {  
+    padding-left: 58px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 25px;
+  font-family: 'Kanit', sans-serif;
+}
+  
+}
+
+@media screen and (max-width : 947px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 110px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 20px;
+    width: 230px;
+    height: 230px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 80px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 230px;
+    height: 230px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 50px;
+    width: 230px;
+    height: 230px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 80px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 80px;
+    font-size: 100px;
+  }
+  
+  
+  .text-box1 {  
+    padding-left: 70px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  .text-box2 {  
+    padding-left: 70px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  .text-box3 {  
+    padding-left: 38px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 17px
+  }
+
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 25px;
+  font-family: 'Kanit', sans-serif;
+}
+  
+}
+
+@media screen and (max-width : 831px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 80px;
+    font-size: 30px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 60px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 500px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 60px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 60px;
+    font-size: 100px;
+  }
+  
+  
+  .text-box1 {  
+    padding-left: 40px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  .text-box2 {  
+    padding-left: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 20px
+  }
+  
+  .text-box3 {  
+    padding-left: 8px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 17px
+  }
+
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.box-c-Btext {
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+  
+}
+
+@media screen and (max-width : 659px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 70px;
+    font-size: 20px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 20px;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 50px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 500px;
+    margin-left: 20px;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 10px;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 50px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 50px;
+    font-size: 100px;
+  }
+  
+  
+  .text-box1 {  
+    padding-left: 40px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 15px
+  }
+  
+  .text-box2 {  
+    padding-left: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 15px
+  }
+  
+  .text-box3 {  
+    padding-left: 8px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 12px
+  }
+
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.box-c-Btext {
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+  
+}
+
+@media screen and (max-width : 593px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 20px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 10px;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 50px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 500px;
+    margin-left: -10px;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 5px;
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 50px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 50px;
+    font-size: 100px;
+  }
+  
+  
+  .text-box1 {  
+    padding-left: 40px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 15px
+  }
+  
+  .text-box2 {  
+    padding-left: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 15px
+  }
+  
+  .text-box3 {  
+    padding-left: 8px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 12px
+  }
+
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.box-c-Btext {
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+  
+}
+
+@media screen and (max-width : 552px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 20px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 30px;
+      font-size: 100px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 500px;
+    margin-left: -10px;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 5px;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 30px;
+    font-size: 100px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 30px;
+    font-size: 100px;
+  }
+  
+  
+  .text-box1 {  
+    padding-left: 40px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 15px
+  }
+  
+  .text-box2 {  
+    padding-left: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 15px
+  }
+  
+  .text-box3 {  
+    padding-left: 8px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 12px
+  }
+
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 400px;
+    background-color: white;
+    width: 90%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.box-c-Btext {
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+  
+}
+
+@media screen and (max-width : 458px) {
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 40px;
+    font-size: 10px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 30px;
+    width: 120px;
+    height: 120px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 20px;
+      font-size: 80px;
+  }
+  
+  .box-contract2 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 500px;
+    margin-left: -10px;
+    width: 120px;
+    height: 120px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 180px;
+    margin-left: 5px;
+    width: 120px;
+    height: 120px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 20px;
+    font-size: 80px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 20px;
+    font-size: 80px;
+  }
+  
+  
+  .text-box1 {  
+    padding-left: 40px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 13px
+  }
+  
+  .text-box2 {  
+    padding-left: 3px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 13px
+  }
+  
+  .text-box3 {  
+    padding-left: 8px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 10px
+  }
+
+
+  .box-content {
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 500px;
+    background-color: white;
+    width: 90%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.box-c-Btext {
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+  
+}
+
+@media screen and (max-width : 414px) {
+  .content_profile img{
+    width: 200px;
+   margin-top: 2px;
+
+  }
+
+  .s-skill {
+    padding-top: 100px;
+    padding-left: 20px;
+    font-size: 10px;
+    display: block;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  .box-contract {
+    
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 90px;
+    height: 90px;
+    background-image: linear-gradient(to right bottom, #c40eeb, #cf18ea, #d921e9, #e32ae9, #ec32e8, #f727cf, #fd24b8, #ff2aa2, #ff4177, #ff6750, #ff8b32, #e7ab23);
+  }
+  
+  .box-contract i{
+      padding-top: 20px;
+      font-size: 50px;
+  }
+  
+  .box-contract2 {
+    
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 5px;
+    width: 90px;
+    height: 90px;
+    background-image: linear-gradient(to top, #3752d3, #2269df, #167ee9, #2392ef, #3ea5f4);
+  }
+  
+  .box-contract3 {
+    
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 90px;
+    height: 90px;
+    background-image: linear-gradient(to right bottom, #adadad, #a0a0a0, #a8a8a8, #afafaf, #b7b7b7);
+  }
+  
+  .box-contract2 i{
+    padding-top: 20px;
+    font-size: 50px;
+  }
+  
+  .box-contract3 i{
+    color: rgb(241, 224, 70);
+    padding-top: 20px;
+    font-size: 50px;
+  }
+  
+  
+  .text-box1 {  
+    padding-left: 30px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 10px
+  }
+  
+  .text-box2 {  
+    padding-left: -30px;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 10px
+  }
+  
+  .text-box3 {  
+    padding-left: -30px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 8px
+  }
+
+
+  .box-content {
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(27, 160, 49);
+    height: 350px;
+    background-color: white;
+    width: 95%;
+}
+
+.box-c-text {
+  padding-top: 15px;
+  text-indent: 50px;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.box-c-Btext {
+  padding-top: 13px;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.content-contract {
+  width: 100%;
+  height: 101px;
+  display: flex;
+}
+  
+} */
+
+
+.footer {
+    background-color: rgb(29, 27, 44);
+    width: 100%;
+    height: 60px;
+}
+  
+.footer-text {
+    color: white;
+    text-align: center;
+}
+  
+.footer-text-t {
+    font-weight: lighter;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-top: 15px;
+}
